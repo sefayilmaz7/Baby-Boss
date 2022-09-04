@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78c42951d35d49e58ef310ff01104938, type: 3}
+  m_Name: GameColorPalate
+  m_EditorClassIdentifier: 
+  colorPalates:
+  - name: Body Palate
+    type: 0
+    colors:
+    - {r: 1, g: 1, b: 1, a: 1}
+    texture: {fileID: 2800000, guid: c0a81b7cc9e042845bc660ecfae31d28, type: 3}
+    colorToPick: 0
+  - name: UnderWare Palate
+    type: 1
+    colors:
+    - {r: 1, g: 1, b: 1, a: 1}
+    texture: {fileID: 0}
+    colorToPick: 0
+  - name: Shoes Palate
+    type: 2
+    colors:
+    - {r: 0.9150943, g: 0.6662088, b: 0.22877358, a: 1}
+    - {r: 0.25579962, g: 0.7264151, b: 0.21586864, a: 1}
+    - {r: 0.3967359, g: 0.16429335, b: 0.49056602, a: 1}
+    texture: {fileID: 0}
+    colorToPick: 0
+  - name: Pants Palate
+    type: 3
+    colors:
+    - {r: 0.9150943, g: 0.6662088, b: 0.22877358, a: 1}
+    - {r: 0.25579962, g: 0.7264151, b: 0.21586864, a: 1}
+    - {r: 0.3967359, g: 0.16429335, b: 0.49056602, a: 1}
+    texture: {fileID: 0}
+    colorToPick: 0
+  - name: Shirt Palate
+    type: 4
+    colors:
+    - {r: 0.9150943, g: 0.6662088, b: 0.22877358, a: 1}
+    - {r: 0.25579962, g: 0.7264151, b: 0.21586864, a: 1}
+    - {r: 0.3967359, g: 0.16429335, b: 0.49056602, a: 1}
+    texture: {fileID: 0}
+    colorToPick: 0
+  - name: Jacket Palate
+    type: 5
+    colors:
+    - {r: 0.9150943, g: 0.6662088, b: 0.22877358, a: 1}
+    - {r: 0.25579962, g: 0.7264151, b: 0.21586864, a: 1}
+    - {r: 0.3967359, g: 0.16429335, b: 0.49056602, a: 1}
+    texture: {fileID: 2800000, guid: c0a81b7cc9e042845bc660ecfae31d28, type: 3}
+    colorToPick: 0
+  - name: Tie Palate
+    type: 6
+    colors:
+    - {r: 0.9150943, g: 0.6662088, b: 0.22877358, a: 1}
+    - {r: 0.25579962, g: 0.7264151, b: 0.21586864, a: 1}
+    - {r: 0.3967359, g: 0.16429335, b: 0.49056602, a: 1}
+    texture: {fileID: 0}
+    colorToPick: 0
+  - name: Ribbon Palate
+    type: 7
+    colors:
+    - {r: 0.3254717, g: 0.5796359, b: 1, a: 1}
+    - {r: 1, g: 0.41037738, b: 0.6950874, a: 1}
+    - {r: 1, g: 1, b: 1, a: 1}
+    texture: {fileID: 0}
+    colorToPick: 0
+  - name: Hair Palate
+    type: 8
+    colors:
+    - {r: 0.4433962, g: 0.23581757, b: 0.13176396, a: 1}
+    - {r: 0.9150943, g: 0.6662088, b: 0.22877358, a: 1}
+    - {r: 0.3967359, g: 0.16429335, b: 0.49056602, a: 1}
+    texture: {fileID: 0}
+    colorToPick: 0
+  - name: Pacifier Palate
+    type: 9
+    colors:
+    - {r: 1, g: 1, b: 1, a: 1}
+    texture: {fileID: 2800000, guid: bd842627eb9679849b49401505cf4e21, type: 3}
+    colorToPick: 0
+  - name: Brush Palate
+    type: 10
+    colors:
+    - {r: 1, g: 1, b: 1, a: 1}
+    texture: {fileID: 2800000, guid: bd842627eb9679849b49401505cf4e21, type: 3}
+    colorToPick: 0
+  shoesBoy:
+    name: 
+    type: 2
+    colors:
+    - {r: 0.38864356, g: 0.31706125, b: 0.8962264, a: 1}
+    texture: {fileID: 0}
+    colorToPick: 0
+  shoesGirl:
+    name: 
+    type: 2
+    colors:
+    - {r: 0.9150943, g: 0.3237362, b: 0.6538807, a: 1}
+    texture: {fileID: 0}
+    colorToPick: 0
+  partToAdd: 10

@@ -1,0 +1,15 @@
+{
+    "name": "MoreMountains.NiceVibrations",
+    "references": [
+        "MoreMountains.NiceVibrations.Haptics",
+        "MoreMountains.NiceVibrations.Rumble"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

@@ -1,0 +1,19 @@
+{
+    "name": "CurvySplinesEditor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:9be86ff0e8da7de47aeb71b549a5af7a",
+        "GUID:f0341e8bba560a443a9a17e4962f9483"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

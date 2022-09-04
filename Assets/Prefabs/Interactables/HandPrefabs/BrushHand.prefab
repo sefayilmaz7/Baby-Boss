@@ -1,0 +1,212 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5683231990242377454
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1638996847679040271, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2111501461953847941, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: m_Name
+      value: BrushHand
+      objectReference: {fileID: 0}
+    - target: {fileID: 2861043784965005742, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3069030542169200318, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376152144223832603, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376152144223832603, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376152144223832603, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376152144223832603, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376152144223832603, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376152144223832603, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376152144223832603, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376152144223832603, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376152144223832603, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376152144223832603, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376152144223832603, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886630473113868108, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7747826991307035782, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 63029f9b0b6ac834c893ee171c873d80, type: 2}
+    - target: {fileID: 7969298995859971565, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8107943781994968403, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117417178563140331, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: modifyData.Array.data[0].ColorPalate.name
+      value: Brush
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117417178563140331, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: modifyData.Array.data[0].ColorPalate.type
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117417178563140331, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: modifyData.Array.data[0].ColorPalate.texture
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117417178563140331, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: modifyData.Array.data[0].MeshRenderers.Array.data[0]
+      value: 
+      objectReference: {fileID: 2691792460287470184}
+    - target: {fileID: 8117417178563140331, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: modifyData.Array.data[0].ColorPalate.colors.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117417178563140331, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: modifyData.Array.data[0].ColorPalate.colors.Array.data[0].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117417178563140331, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: modifyData.Array.data[0].ColorPalate.colors.Array.data[0].b
+      value: 0.5801887
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117417178563140331, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: modifyData.Array.data[0].ColorPalate.colors.Array.data[0].g
+      value: 0.79851776
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117417178563140331, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+        type: 3}
+      propertyPath: modifyData.Array.data[0].ColorPalate.colors.Array.data[0].r
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e40d650b44053041bb7ddffc8bb8d01, type: 3}
+--- !u!1 &6022273701346696299 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2111501461953847941, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+    type: 3}
+  m_PrefabInstance: {fileID: 5683231990242377454}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4501416582188147717 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8117417178563140331, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+    type: 3}
+  m_PrefabInstance: {fileID: 5683231990242377454}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c2ab398593c27246931e199829bb6e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &9069811199604170805 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3675100406960905947, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+    type: 3}
+  m_PrefabInstance: {fileID: 5683231990242377454}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df1441ba010b4582b81cb9e954d75312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!23 &2691792460287470184 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7747826991307035782, guid: 0e40d650b44053041bb7ddffc8bb8d01,
+    type: 3}
+  m_PrefabInstance: {fileID: 5683231990242377454}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3296441796605851273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6022273701346696299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce9326da65d74514b2746a540a4f932c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  genderSetting: 2
+  gameColorPalate: {fileID: 11400000, guid: d827e9bcf1749bd48809f77d378e66c9, type: 2}
+  bodyPart: 10
+  materialModifier: {fileID: 4501416582188147717}
+  robotArm: {fileID: 9069811199604170805}
+  style:
+    stylePalate:
+      name: Brush
+      type: 10
+      colors:
+      - {r: 1, g: 0.79851776, b: 0.5801887, a: 1}
+      texture: {fileID: 0}
+      colorToPick: 0

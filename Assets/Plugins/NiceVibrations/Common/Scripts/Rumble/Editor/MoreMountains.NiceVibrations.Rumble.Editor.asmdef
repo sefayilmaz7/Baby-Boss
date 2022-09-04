@@ -1,0 +1,16 @@
+{
+    "name": "MoreMountains.NiceVibrations.Rumble.Editor",
+    "references": [
+        "MoreMountains.NiceVibrations.Rumble"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "MOREMOUNTAINS_INPUTSYSTEM_INSTALLED"
+    ]
+}

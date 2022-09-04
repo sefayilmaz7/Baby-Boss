@@ -1,0 +1,181 @@
+fileFormatVersion: 2
+guid: 66aa46c9e005c534e8c9f4d3bacc7fe3
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: 1827226128182048838
+    second: Take 001
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'LeftUpperLeg' not found\n"
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: robot_arm_rig2(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: baby_boss_robot_kutu
+      parentName: robot_arm_rig2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.00000015695824, y: 0, z: -0, w: 1}
+      scale: {x: 100, y: 100, z: 100}
+    - name: baby_boss_robot_siren
+      parentName: baby_boss_robot_kutu
+      position: {x: 0.0008979079, y: 0.004588855, z: -0.0010277913}
+      rotation: {x: -0.00000023841856, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: baby_boss_robot_kol_yuvarlak.002
+      parentName: baby_boss_robot_kutu
+      position: {x: -0.00042480868, y: 0.004601193, z: 0.0011143045}
+      rotation: {x: -0.00000023841856, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: baby_boss_robot_kol.002
+      parentName: baby_boss_robot_kol_yuvarlak.002
+      position: {x: 0.000020899512, y: 0.0010748785, z: -0.000017915294}
+      rotation: {x: -0.00000023841858, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: baby_boss_robot_dugme1
+      parentName: baby_boss_robot_kutu
+      position: {x: 0.00015284211, y: 0.00338637, z: 0.0014371698}
+      rotation: {x: -0.00000023841856, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: baby_boss_robot_dugme2
+      parentName: baby_boss_robot_kutu
+      position: {x: 0.00015284211, y: 0.0016706939, z: 0.0014371703}
+      rotation: {x: -0.00000023841856, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: baby_boss_robot_tabela
+      parentName: robot_arm_rig2(Clone)
+      position: {x: -0, y: 0, z: -0.21150918}
+      rotation: {x: -0.00000015695824, y: 0, z: -0, w: 1}
+      scale: {x: 100, y: 100, z: 100}
+    - name: IK Chain001
+      parentName: robot_arm_rig2(Clone)
+      position: {x: -1.0740937, y: 1.1831616, z: 0.10695966}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone001
+      parentName: robot_arm_rig2(Clone)
+      position: {x: -0.035148155, y: 0.57482725, z: 0.10695965}
+      rotation: {x: 0.0000001580301, y: -0.00000013788173, z: -0.543692, w: 0.83928484}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Object001
+      parentName: Bone001
+      position: {x: -0.69093895, y: -0.0010199356, z: 0.0061725616}
+      rotation: {x: -0.00000070091164, y: -0.00000022533027, z: 0.5436918, w: 0.839285}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Bone002
+      parentName: Bone001
+      position: {x: -0.69133294, y: 0.0000002479553, z: 0.000000028610229}
+      rotation: {x: -0.0048581185, y: -0.004997126, z: 0.028072085, w: 0.9995816}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1}
+    - name: Object002
+      parentName: Bone002
+      position: {x: -0.46638045, y: 0.0043149567, z: 0.009208641}
+      rotation: {x: -0.0000004310572, y: -0.00000028278487, z: 0.18951257, w: 0.9818783}
+      scale: {x: 99.99999, y: 99.99999, z: 100}
+    - name: Bone003
+      parentName: Bone002
+      position: {x: -0.46790946, y: -0.000000076293944, z: -0.000000019073486}
+      rotation: {x: 0.00000008313281, y: -0.000000111270815, z: 0.372003, w: 0.9282316}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Bone004
+      parentName: Bone003
+      position: {x: -0.44295228, y: -0.00000030517577, z: -0.000000009536743}
+      rotation: {x: 7.815968e-14, y: -2.1316277e-14, z: 9.250253e-15, w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: Bone001
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

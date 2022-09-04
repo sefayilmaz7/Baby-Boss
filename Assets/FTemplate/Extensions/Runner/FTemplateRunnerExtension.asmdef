@@ -1,0 +1,17 @@
+{
+    "name": "FTemplateRunnerExtension",
+    "rootNamespace": "",
+    "references": [
+        "GUID:223a3324699e7df418cb4f5812d7f3e2",
+        "GUID:f0341e8bba560a443a9a17e4962f9483"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

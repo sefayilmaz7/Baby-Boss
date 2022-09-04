@@ -1,0 +1,16 @@
+{
+    "name": "GameAnalyticsEditor",
+    "references": [
+        "GameAnalyticsRuntime"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "autoReferenced": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "defineConstraints": [],
+    "optionalUnityReferences": []
+}

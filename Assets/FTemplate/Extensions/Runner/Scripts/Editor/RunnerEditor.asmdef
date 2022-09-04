@@ -1,0 +1,18 @@
+{
+    "name": "RunnerEditor",
+    "rootNamespace": "Runner",
+    "references": [
+        "GUID:e57c711d2101d5540a4053a02f429bb4"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

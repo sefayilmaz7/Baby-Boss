@@ -1,0 +1,22 @@
+{
+    "name": "FTemplate",
+    "references": [
+        "Unity.TextMeshPro",
+        "Unity.RenderPipelines.Universal.Runtime",
+        "MoreMountains.NiceVibrations",
+        "MoreMountains.NiceVibrations.Haptics",
+        "MoreMountains.NiceVibrations.Rumble",
+        "Cinemachine",
+        "EasyButtons",
+        "CurvySplines",
+        "GameAnalyticsRuntime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "autoReferenced": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "defineConstraints": [],
+    "optionalUnityReferences": []
+}

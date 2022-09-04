@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4821ae358cec35e4eba8ca442f7290c2, type: 3}
+  m_Name: ShopConfiguration
+  m_EditorClassIdentifier: 
+  m_tabs:
+  - Category: skin
+    RandomUnlockPrice: 5
+    RandomUnlockPriceMultiplier: 1
+    Icon: {fileID: 21300000, guid: dfdd8b3d503877840925f3ff0b566f69, type: 3}
+    DefaultItem: {fileID: 11400000, guid: a86b5acd729401c4da3e3176d9609bd3, type: 2}
+    Items:
+    - {fileID: 11400000, guid: fe14077f1225fda4c8074279c3287d62, type: 2}
+    - {fileID: 11400000, guid: c899444a6c9ae564eb38ef4f68382cd7, type: 2}
+  - Category: accessory
+    RandomUnlockPrice: 0
+    RandomUnlockPriceMultiplier: 1
+    Icon: {fileID: 21300000, guid: dfdd8b3d503877840925f3ff0b566f69, type: 3}
+    DefaultItem: {fileID: 11400000, guid: b72add3b893218e4da8c809042581135, type: 2}
+    Items:
+    - {fileID: 11400000, guid: b5ae25d4d619ac64d944a709b99a0bb2, type: 2}
+  m_shopItemWidth: 150
+  m_ranks:
+  - Name: Rookie
+    Icon: {fileID: 21300000, guid: 74f7f2b9b8bda6c4caf2c9abf01d279c, type: 3}
+    ProgressToNext: 1
+  - Name: Amateur
+    Icon: {fileID: 21300000, guid: e1e0f5259667f6f4e9578799bfda62b6, type: 3}
+    ProgressToNext: 2
+  - Name: Pro
+    Icon: {fileID: 21300000, guid: c44c84530b3b91745bd368b58a88b79c, type: 3}
+    ProgressToNext: 3
+  - Name: All Star
+    Icon: {fileID: 21300000, guid: 205b44649f598ab4bb25b0bfe0b6cf4c, type: 3}
+    ProgressToNext: 3
+  - Name: Superstar
+    Icon: {fileID: 21300000, guid: 9aba69d3b589b954383ba81a60fb11a7, type: 3}
+    ProgressToNext: 4
+  - Name: Elite
+    Icon: {fileID: 21300000, guid: 052e5f7205030aa47b5036dc0e98d164, type: 3}
+    ProgressToNext: 5
+  - Name: Legend
+    Icon: {fileID: 21300000, guid: 67a737b27dbf682498102c6b770c8458, type: 3}
+    ProgressToNext: 6
+  - Name: King of Basketball
+    Icon: {fileID: 21300000, guid: 8ab88327fe2665b4290b222fbf23e7fd, type: 3}
+    ProgressToNext: 6
+  m_maxRankColor: {r: 1, g: 0.98039216, b: 0, a: 1}
+  freeUnlockIntervals: 04000000080000000c000000
+  m_autoSaveFreeUnlockProgress: 1
+  m_shopScene: ShopScene
+  m_videoAdForCoinsAmountRemoteKey: shop_reward
+  m_videoAdForCoinsDefaultAmount: 500

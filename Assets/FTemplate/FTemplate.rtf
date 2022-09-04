@@ -1,0 +1,321 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset162 Calibri;}{\f2\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs64\lang9 About FTemplate\b0\fs22\par
+"\i Assets/FTemplate/Resources/FTemplate.prefab\i0 " is the main prefab of FTemplate. This prefab is instantiated automatically when the game starts. Feel free to delete any unnecessary UI elements there to optimize the build size.\f1\lang1055  Also set unused sprites' Max Size to 32.\f0\lang9\par
+FTemplate comes bundled with a demo project that uses most of the features FTemplate offers. It can be found \f1\lang1055 in\f0\lang9  the \i\f1\lang1055 FTemplate/_D\f0\lang9 emo\i0  folder.\par
+\par
+\b\fs64 Prerequisites\b0\fs22\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\f1\lang1055 (\i If 'TextMesh Pro' folder doesn't exist\i0 ) \f0\lang9 Import \i TextMesh Pro\i0  via either Package Manager or Asset Store. Then, execute the "\b Window-TextMeshPro-Import TMP Essential Resources\b0 " command. It is also recommended to change "\i Assets/TextMesh Pro/Resources/TMP Settings/Default Font Asset\i0 " to "\i Assets/FTemplate/Fonts/Bumpo SDF\i0 "\par
+{\pntext\f2\'B7\tab}\f1\lang1055 For the Ads module to work, import \i ironSource SDK, GGI SDK or LionKit SDK\i0 . Then, activate it via the \b Flamingo-SDK Integrations\b0  window\f0\lang9\par
+{\pntext\f2\'B7\tab}For the Analytics module to work, import\f1\lang1055  \i Elephant SDK\i0 ,\f0\lang9  \i GameAnalytics\f1\lang1055 , GGI SDK\b *\b0 , LionKit SDK\i0\f0\lang9  and/or \i Facebook SDK\i0 . Then, \f1\lang1055 activate them via the \b Flamingo-SDK Integrations\b0  window\par
+{\pntext\f2\'B7\tab}\f0\lang1033 FTemplate has its own \i FTemplate.asmdef\i0  Assembly Definition File and thus, any 3rd party SDKs that must be integrated into FTemplate will also need their own Assembly Definition Files. Sometimes this is easy but sometimes, these SDKs are spread across multiple folders and it's just not feasible or possible to use Assembly Definition Files with that SDK. In that case, FTemplate's Assembly Definition File must be deleted so that FTemplate can see the 3rd party SDKs scripts. One thing to note in this scenario is that, if URP is used, UIModule's \i "#define USING_URP\i0 " line \b must be\b0  uncommented for the \i PlayCelebrationParticles\i0  function to work correctly\f1\lang1055\par
+
+\pard\sa200\sl276\slmult1\par
+\b\f0\fs64\lang1033 Plugins\b0\fs22\lang9\par
+FTemplate comes bundled with a number of plugins in \i Plugins \i0 folder. Most of the plugins have their own documentations.\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b\f1\lang1055 BetterBuildInfo: \b0 shows which assets are included in a build (useful to diagnose build size). After building the project, open "\i Window-Better-Better Build Info\i0 ", click "\i Open Report...\i0 " and select the build report located inside "\i PROJECT_PATH/BuildReports\i0 "\f0\lang9\par
+{\pntext\f2\'B7\tab}\b DOTween:\b0  the famous tween engine\par
+{\pntext\f2\'B7\tab}\b DriveBrowser:\b0  allows accessing files on the Drive storage directly from within Unity. Simply open "\i Window-Drive Browser\i0 " and grant all the necessary permissions to the plugin on the first launch (this plugin is crafted internally, so it's completely safe to give these permissions). To learn about all of the features, open the editor window's Help screen (from its context menu)\par
+{\pntext\f2\'B7\tab}\b NiceVibrations: \b0 haptic plugin for Android & iOS. Haptics can be triggered via "\b MMVibrationManager.Haptic\b0 "\par
+{\pntext\f2\'B7\tab}\b SimpleInput: \b0 provides common input methods like joystick, touchpad, dpad, steering wheel, swipe/pinch/rotate gestures and etc.\par
+
+\pard\sa200\sl276\slmult1\par
+\b\f1\fs64\lang1055 Remarks\b0\f0\fs22\lang9\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\f1\lang1055 FTemplate contains a simple Sprite Asset with a coin sprite, simply type "\i <sprite="Coin" index=0>\i0 " in TextMesh Pro objects to embed it in your texts\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 You can build the game with all levels/character customizations unlocked via \b Flamingo-Build Game\b0  menu item. For normal builds, it is still beneficial to use this option since it slightly optimizes the build under the hood\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 You can edit the Shop and Gallery modules' save data via \b Flamingo-Edit Save Data\b0  menu item\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 The \b Flamingo-Generate FTemplate Atlas\b0  menu item finds all the sprites used by FTemplate (excluding sprites inside \i Unpacked\i0  directories) and adds them to the "\i Assets/FTemplate/Textures/UIAtlas\i0 " sprite atlas. When \i Sprite Packer\i0  is enabled in \b Edit-Project Settings-Editor\b0 , this can greatly reduce the number of UI draw calls in addition to optimizing the build size of the game\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 To change the currency icon that is used throughout the FTemplate UI at runtime, you can use the \b FTemplateNamespace.CurrencyIconHolder.Icon\b0  property\f0\lang9\par
+{\pntext\f2\'B7\tab}\b\f1\lang1055 FTemplate.Session\b0  property holds two variables: \i previousVersion\i0  and \i currentVersion\i0 . These variables store the last session's and the current session's \i Application.version\i0  values. Their values can be compared against each other to check if a user has updated their game from a specific version. It can be useful when a bug occurs only when updating the game from a specific version due to a changed save data format, so that that data can be reset to prevent the bug from occurring\f0\lang9\par
+
+\pard\sa200\sl276\slmult1\f1\lang1055\par
+\b\f0\fs64\lang9 Helper Classes\b0\fs22\par
+\b\fs34 SingletonBehaviour\b0\fs22\par
+Base class for singletons. It has the following overridable functions: \b OnLevelInitialized\b0 , \b OnLevelStarted\b0 , \b OnLevelFinished \b0 and \b OnLevelClosed\b0 . These functions don't trigger themselves\b **\b0 , so someone (e.g. game manager) has to trigger them manually by calling \b TriggerLevelInitialized\b0 , \b TriggerLevelStarted \b0 and etc. Calling these functions is not mandatory but is highly recommended; this way, each SingletonBehaviour can initialize, destroy or pool its objects appropriately.\par
+\f1\lang1055 If you'd like to override these functions on a non-singleton class, you can extend \b FBehaviour\b0  instead of \i MonoBehaviour\i0 .\f0\lang9\par
+\b **\b0 The only exception to this is that, UI module's \i FadeToScene \i0 functions automatically trigger \i OnLevelClosed \i0 before switching to the new scene.\par
+\b\fs34 Other Classes\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\fs22 BetterWaitForSeconds: \b0 an alternative to "\i new WaitForSeconds\i0 " in coroutines. It has an internal pool of WaitForSeconds objects so it doesn't allocate any GC. Simply call "\b BetterWaitForSeconds.Wait\b0 "\par
+{\pntext\f2\'B7\tab}\b EditorDebug:\b0  provides "\b EditorDebug.Log\b0 " functions that are automatically stripped from the builds using \i ConditionalAttribute\i0  (i.e. these logs appear in the editor only and not affect the builds in any way)\par
+{\pntext\f2\'B7\tab}\b ExtensionFunctions: \b0 introduces some useful extension functions\par
+{\pntext\f2\'B7\tab}\b NotchCompensator: \b0 if a \i RectTransform \i0 is intersecting with the notch at the top of the screen, moves that RectTransform downwards. The RectTransform must have\f1\lang1055  "\i Pivot Y\i0 ", "\i Anchor Min Y\i0 " and "\i Anchor Max Y\i0 "\f0\lang9  value\f1\lang1055 s\f0\lang9  \f1\lang1055 of \f0\lang9 1\f1\lang1055 . This class also listens to Ads module's \i OnBannerAdVisibilityChanged\i0  event and offsets assigned UI elements if they are intersecting with the banner ad. UI elements located at the bottom of the screen must have their "\i Pivot Y\i0 ", "\i Anchor Min Y\i0 " and "\i Anchor Max Y\i0\f0\lang9  value\f1\lang1055 s\f0\lang9  set to \f1\lang1055 0\f0\lang9\par
+{\pntext\f2\'B7\tab}\b ParticlesHolder: \b0 holds a number of \i ParticleSystem \i0 objects together and plays them all at once. \i ParticleSystem.Play() \i0 function internally uses \i GetComponentsInChildren \i0 which is bad for optimization, this component overcomes that issue\par
+{\pntext\f2\'B7\tab}\b PointerEventListener: \b0 invokes different events when mouse/finger (pointer) \lang1033 interacts with the attached RectTransform\lang9 : \i OnPointerDown\i0 , \i OnPointerDrag \i0 and \i OnPointerUp\i0 . Only one pointer is tracked at a time, so if Pointer B is pressed while Pointer A was being tracked, Pointer B will become the active pointer and Pointer A will no longer be tracked. OnPointerUp for Pointer A will not be called but OnPointerDown for Pointer B will be called\par
+{\pntext\f2\'B7\tab}\b SimplePool: \b0 an object pool script; used in FTemplate\par
+{\pntext\f2\'B7\tab}\b TMP_IntegerText: \b0 introduces some \b SetText \b0 extension functions to \i TextMesh Pro \i0 for displaying an integer or float value on UI without allocating any GC\par
+
+\pard\sa200\sl276\slmult1\b\fs34 Editor Scripts\b0\fs22\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b BuildPostProcessor:\b0  after creating an iOS build, removes the obsolete \i UIApplicationExitsOnSuspend \i0 key from \i Info.plist \i0 and adds an \i ITSAppUsesNonExemptEncryption=false\i0  row to the same file, which gets rid of the "Does the app use encryption" confirmation dialog on iOS App Store\par
+{\pntext\f2\'B7\tab}\b MenuItems: \b0 adds several buttons to the "\i Flamingo\i0 " menu in menubar\par
+{\pntext\f2\'B7\tab}\b\f1\lang1055 MultiScreenshotCapture: \b0 can capture screenshots for different resolutions simultaneously (very useful for generating AppStore screenshots). Can be accessed via "\i Window-Multi Screenshot Capture\i0 "\f0\lang9\par
+{\pntext\f2\'B7\tab}\b UIToggler: \b0 adds a "\i Hide Canvas\i0 " button to the top-left corner of the Scene window, which hides all canvases from Scene view when clicked\par
+
+\pard\sa200\sl276\slmult1\par
+\b\fs64 Modules\b0\fs22\par
+\ul\b\fs48 A\f1\lang1055 ds\f0\lang9 Module\ulnone\b0\fs22\par
+Can be accessed via '\b FTemplate.\f1\lang1055 Ads\b0\f0\lang9 '. This module can be used to \f1\lang1055 show banner, interstitial and rewarded video ads.\par
+\b\f0\fs34\lang9 Scripting API\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0\fs22 '\b bool \f1\lang1055 AdsEnabled\f0\lang9  \{ get; \}\b0 ': \f1\lang1055 returns \i true\i0  if an ad network is integrated\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b bool IsInterstitialAdAvailable()\b0 ': returns whether or not an interstitial ad is ready to be displayed\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b bool IsRewardedAdAvailable()\b0 ': returns whether or not a rewarded video ad is ready to be displayed\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b void ShowBannerAd( bool bottomBanner )\b0 ': shows a banner ad at either the bottom of the screen or the top of the screen (GGI SDK will always show banners at the bottom)\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b void HideBannerAd()\b0 ': hides the currently visible banner ad\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b void ShowInterstitialAd()\b0 ': shows an interstitial ad\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b void ShowRewardedAd( RewardedAdCallback rewardedAdCallback, string identifier )\b0 ': shows a rewarded video ad. After user watches the rewarded ad, \i rewardedAdCallback\i0  is invoked. \f0\lang9 The delegate takes a \i RewardedAdReward \i0 parameter\f1\lang1055 , which holds "\i string currency\i0 " and "\i int amount\i0 " values that can be configured via the ad network's dashboard. If the ad network doesn't support it, these values will be null and 0, respectively. The \i identifier\i0  parameter determines the source of this ad, e.g. "\i free_xp_offer\i0 "\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b void SkipNextInterstitialAd()\b0 ': ignores the next \i ShowInterstitialAd\i0  call. Can be useful when e.g. user decides to skip a level by watching a rewarded ad; if the app logic shows an interstitial ad automatically before loading the next level, we would skip it with this function in order to avoid showing an interstitial ad immediately after a rewarded ad\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b void ShowBannerAdBackground( Color backgroundColor )\b0 ': shows a solid color UI element underneath the banner ad (only when the banner ad is visible). This UI element fills the screen horizontally. So, if the banner ad doesn't fill the screen horizontally, the remaining free space would be filled by this UI element\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b void HideBannerAdBackground()\b0 ': hides the solid color UI element underneath the banner ad\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b bool BannerAdVisible \{ get; \}\b0 ': if a banner ad is currently visible, returns true\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b bool BannerAdAtBottom \{ get; \}\b0 ': returns whether the banner ad is located at the bottom of the screen or at the top of the screen\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b float BannerAdHeightInPixels \{ get; \}\b0 ': returns the height of the banner ad in pixels\f0\lang9\par
+{\pntext\f2\'B7\tab}'\b BannerAdVisibilityChangeCallback OnBannerAdVisibilityChanged\b0 ': invoked when \f1\lang1055 banner ad's visibility changes\f0\lang9\par
+
+\pard\sa200\sl276\slmult1\b\f1\fs34\lang1055 Ads\f0\lang9 Configuration\b0\fs22\par
+\f1\lang1055 Parameters\f0\lang9  of the \f1\lang1055 Ads\f0\lang9  \f1\lang1055 module \f0\lang9 can be configured via a\f1\lang1055 n\f0\lang9  \b\f1\lang1055 Ads\f0\lang9 Configuration\b0  asset (\i Assets-Create-Flamingo-\f1\lang1055 Ads\f0\lang9  Configuration\i0 ):\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b\f1\lang1055 Iron Source App ID\f0\lang9 :\b0  \f1\lang1055 if ironSource SDK is integrated, the App ID copied from ironSource dashboard should be pasted here\f0\lang9\par
+{\pntext\f2\'B7\tab}\b\f1\lang1055 Failed Ad Retry Interval\f0\lang9 :\b0  \f1\lang1055 when an ad is fails to load, another ad request will be made \f0\lang9 after specified number of seconds pass\par
+{\pntext\f2\'B7\tab}\b\f1\lang1055 Interstitial Ad Cooldown\f0\lang9 :\b0  \f1\lang1055 when an interstitial ad is shown, specified number of seconds must pass before showing another interstitial ad. Calls to \i ShowInterstitialAd\i0  will be ignored during this cooldown\f0\lang9\par
+
+\pard\sa200\sl276\slmult1\ul\b IMPORTANT:\ulnone\b0  \f1\lang1055 Ads\f0\lang9 Configuration must be passed to the \f1\lang1055 Ads\f0\lang9  module via '\b SetConfiguration( \f1\lang1055 Ads\f0\lang9 Configuration configuration )\b0 ' at the start of the game.\f1\lang1055  Alternatively, if an AdsConfiguration asset named \i AdsConfiguration\i0  is present in the Resources folder, it will automatically be used for the configuration.\f0\lang9\par
+\f1\lang1055\par
+\ul\b\f0\fs48\lang9 AnalyticsModule\ulnone\b0\fs22\par
+Can be accessed via '\b FTemplate.Analytics\b0 '. This module can be used to send \f1\lang1055 a number of events to analytics solutions and fetch remote data from them for A/B testing\f0\lang9 .\f1\lang1055  Currently, only \i GGI SDK\i0  and \i LionKit SDK\i0  supports fetching remote data.\par
+Functions in this module are also documented in the code.\f0\lang9\par
+\b\fs34 Scripting API\b0\fs22\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\f1\lang1055 '\b bool ElephantSDKEnabled \{ get; \}\b0 ': returns \i true\i0  if Elephant SDK is integrated\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b bool FacebookSDKEnabled \{ get; \}\b0 ': returns \i true\i0  if Facebook SDK is integrated\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b bool GameAnalyticsSDKEnabled \{ get; \}\b0 ': returns \i true\i0  if GameAnalytics SDK is integrated\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b bool GGISDKEnabled \{ get; \}\b0 ': returns \i true\i0  if GGI SDK (Good Job Games) is integrated\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b bool LionKitSDKEnabled \{ get; \}\b0 ': returns \i true\i0  if LionKit SDK (Lion Studios) is integrated\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b OnlineStatus RemoteDataStatus \{ get; \}\b0 ': if an analytics SDK supports fetching remote values from the server, this property determines whether or not the values are downloaded from the server (i.e. they are ready). Initially, it is equal to \i Pending\i0 . If the SDK connects to the server successfully, it will be changed to \i Success\i0 , otherwise \i Failure\i0\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b void LevelStartedEvent( Progression progression )\b0 ': sends a LevelStarted event to analytics solutions. \i Progression\i0  can take \i level\i0 , \i checkpoint\i0  and \i score\i0  arguments\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b void LevelFailedEvent( Progression progression )\b0 ': sends a LevelFailed event to analytics solutions\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b void LevelCompletedEvent( Progression progression )\b0 ': sends a LevelCompleted event to analytics solutions\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b void LevelSkippedEvent( Progression progression )\b0 ': sends a LevelSkipped event to analytics solutions (e.g. when user watches a rewarded ad to skip the current level)\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b void TutorialCompletedEvent( int step, params Parameter[] parameters )\b0 ': sends a tutorial completion event to analytics solutions. If tutorial consists of multiple steps/stages, \i step\i0  parameter determines which step of the tutorial is completed\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b void TutorialCompletedEvent( string step, params Parameter[] parameters )\b0 ': same as above\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b void TransactionEvent( string source, string currencyType, int level, long transactionAmount, long finalCurrency, string eventName, string unlockedItemID )\b0 ': sends data about a transaction to analytics solutions. If this is a purchase event (i.e. player spends money), \i transactionAmount\i0  must be negative!\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b void UpgradePurchasedEvent( string upgrade, int upgradeLevel, int level, string currencyType, long cost, long finalCurrency )\b0 ': sends data about purchasing an upgrade (e.g. hp upgrade, player stats upgrade) to analytics solutions\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b void ContentUnlockedEvent( string content, int numberOfUnlocks, int level, params Parameter[] parameters )\b0 ': sends data about a free content unlock (that may occur after playing a number of levels or when player finds a rare chest, for example) to analytics solutions\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b void CustomEvent( string eventName, int level, Parameter[] parameters = null )\b0 ': sends a generic event to analytics solutions. For example, UIModule uses this function to send an event when Shop or Gallery is opened\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b string GetRemoteStringValue( string key, string defaultValue )\b0 ': fetches a remote string value from the analytics servers. If the value isn't found or hasn't been fetched yet, \i defaultValue\i0  will be returned. You can query \i RemoteDataStatus\i0  to see if remote values are fetched from the server\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b int GetRemoteIntValue( string key, int defaultValue )\b0 ': fetches a remote integer value from the analytics servers\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b float GetRemoteFloatValue( string key, float defaultValue )\b0 ': fetches a remote float value from the analytics servers\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b bool GetRemoteBoolValue( string key, bool defaultValue )\b0 ': fetches a remote boolean value from the analytics servers\f0\lang9\par
+
+\pard\sa200\sl276\slmult1\par
+\ul\b\fs48 AnimationModule\ulnone\b0\fs22\par
+Can't be accessed from outside. This module \f1\lang1055 is internally used by UIModule to animate the UI.\par
+\f0\lang9\par
+\ul\b\fs48 A\f1\lang1055 udio\f0\lang9 Module\ulnone\b0\fs22\par
+Can be accessed via '\b FTemplate.\f1\lang1055 Audio\b0\f0\lang9 '. This module can be used to \f1\lang1055 quickly play audio clips without having to create the AudioSources manually (module has an internal pool of AudioSource objects).\f0\lang9\par
+\b\fs34 Scripting API\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0\fs22 '\b bool \f1\lang1055 AudioEnabled\f0\lang9  \{ get;\f1\lang1055  set;\f0\lang9  \}\b0 ': \f1\lang1055 mutes/unmutes all sounds\f0\lang9\par
+{\pntext\f2\'B7\tab}'\b void SetVolume( float value, float fadeDuration = 0f )\b0 ': \lang1033 changes the global volume. The change can be applied gradually by setting a \i fadeDuration\i0 . This function must be used instead of the \i AudioListener.volume\i0  property\lang9\par
+{\pntext\f2\'B7\tab}'\b AudioSource Play2DClip( AudioClip clip, bool isLooping, float pitch = 1f )\b0 ': \f1\lang1055 plays a 2D audio clip (e.g. button click, background music). If \i isLooping \i0 is set to \i false\i0 , AudioSource will automatically be pooled after \i clip\i0  is played. Otherwise, it must be pooled manually using the \i Pool \i0 function\f0\lang9\par
+{\pntext\f2\'B7\tab}'\b AudioSource Play3DClip( AudioClip clip, Vector3 position, bool isLooping, float pitch = 1f )\b0 ': \f1\lang1055 plays a 3D audio clip in world space. If \i isLooping \i0 is set to \i false\i0 , AudioSource will automatically be pooled after \i clip\i0  is played. Otherwise, it must be pooled manually using the \i Pool \i0 function\f0\lang9\par
+{\pntext\f2\'B7\tab}'\b void PlayButtonClickAudio( ButtonState buttonState )\b0 ': \f1\lang1055 plays a button click sound effect. \i ButtonState \i0 has 3 different values: \i Neutral\i0 , \i Positive \i0 and \i Negative\i0\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b AudioSource FetchAudioSource()\b0 ': fetches an AudioSource from the internal AudioSource pool and returns it. When the AudioSource is no longer needed, it should be pooled using the \i Pool\i0  function\f0\lang9\par
+{\pntext\f2\'B7\tab}'\b void Pool( AudioSource audioSource )\b0 ': \f1\lang1055 pools an AudioSource object\f0\lang9\par
+
+\pard\sa200\sl276\slmult1\par
+\ul\b\fs48 GalleryModule\ulnone\b0\i\fs36\par
+\i0\fs22 Can be accessed via '\b FTemplate.Gallery\b0 '. This module controls the level selection UI and manages level progression. These values are saved to disk (\i Application.persistentDataPath\i0 ) in binary format, which is more secure than PlayerPrefs.\par
+For simplicity's sake, if neither of the following features are required, consider using \i PlayerPrefs\i0  instead of this module:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 The provided level selection UI is used\par
+{\pntext\f2\'B7\tab}Game stores highscores of each level\par
+{\pntext\f2\'B7\tab}After all levels are completed, game starts opening levels in a random order\par
+
+\pard\sa200\sl276\slmult1\b\fs34 Scripting API\b0\fs22\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 '\b int NumberOfLevels \{ get; \}\b0 ': returns the number of levels the game has\par
+{\pntext\f2\'B7\tab}'\b int CompletedLevelCount \{ get; \}\b0 ': returns the number of completed levels. This value doesn't increase when an already completed level is replayed\par
+{\pntext\f2\'B7\tab}'\b int TotalPlayedLevelCount \{ get; \}\b0 ': returns the total number of levels the user has completed. Unlike \i CompletedLevelCount\i0 , this value increases each time a level is completed, regardless of whether or not the level was already completed\par
+{\pntext\f2\'B7\tab}'\b GalleryConfiguration.LevelHolder ActiveLevel \{ get; \}\b0 ': returns the current level\par
+{\pntext\f2\'B7\tab}'\b\f1\lang1055 int\f0\lang9  ActiveLevel\f1\lang1055 Index\f0\lang9  \{ get; \}\b0 ': \f1\lang1055 index of \i ActiveLevel\i0\f0\lang9\par
+{\pntext\f2\'B7\tab}'\b GalleryConfiguration.LevelHolder this[int index] \{ get; \}\b0 ': returns the level at the specified index\par
+{\pntext\f2\'B7\tab}'\b GalleryConfiguration.LevelHolder this[string levelID] \{ get; \}\b0 ': returns the level with the specified ID\par
+{\pntext\f2\'B7\tab}'\b\f1\lang1055 int\f0\lang9  \f1\lang1055 CheckpointsPerStage\f0\lang9  \{ get; \}\b0 ': \f1\lang1055 returns the number of checkpoints in each stage\f0\lang9\par
+{\pntext\f2\'B7\tab}'\b bool PlayingBonusLevel \{ get; \}\b0 ': if the game has bonus levels, returns whether or not \i ActiveLevel \i0 is a bonus level\par
+{\pntext\f2\'B7\tab}'\b void SetActiveLevel( string levelID )\b0 ': changes the value of \i ActiveLevel\i0\par
+{\pntext\f2\'B7\tab}'\b void IncrementActiveLevel()\b0 ': increments the value of \i ActiveLevel\i0\f1\lang1055  (i.e. sets the next level as active)\f0\lang9 . If all levels are played, a random level is selected\par
+{\pntext\f2\'B7\tab}'\b void GetCurrentProgress( out int stage, out int checkpoint )\b0 ': gets user's current progress\par
+{\pntext\f2\'B7\tab}'\b void GetCurrentProgress( out int \f1\lang1055 level\f0\lang9  )\b0 ': \f1\lang1055 similar to above but \i level \i0 is calculated with the following formula: "\i stage * CheckpointsPerLevel + checkpoint\i0 "\f0\lang9\par
+{\pntext\f2\'B7\tab}'\b void GetNextProgress( out int stage, out int checkpoint )\b0 ': gets the progress user will have when \i IncrementActiveLevel \i0 is called\par
+{\pntext\f2\'B7\tab}'\b void GetNextProgress( out int \f1\lang1055 level\f0\lang9  )\b0 ': \f1\lang1055 similar to above but \i level \i0 is calculated with the following formula: "\i stage * CheckpointsPerLevel + checkpoint + 1\i0 "\f0\lang9\par
+{\pntext\f2\'B7\tab}'\b int GetHighscore( string levelID )\b0 ': gets the highest score achieved on the specified level. If the level isn't completed yet, a negative value is returned\par
+{\pntext\f2\'B7\tab}'\b void SubmitScore( string levelID, int score )\b0 ': submits a score for the specified level and potentially changes the level's highscore\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b void UnlockAllLevels()\b0 ': marks all levels as completed. Can be called as part of a cheat code\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b void ResetSettings()\b0 ': resets all Gallery progress\f0\lang9\par
+{\pntext\f2\'B7\tab}'\b PlayButtonClickedDelegate OnGalleryPlayButtonClicked\b0 ': this event is invoked when user clicks the Play button in the Gallery. The delegate takes a \i GalleryConfiguration.LevelHolder\i0  parameter and returns a \i boolean\i0 . If the selected level can't be played, this function should return \i false\i0  (this event is invoked only if the selected level is unlocked, so no need to check that). When it returns \i true\i0 , any further clicks to the Play button are ignored. Note that it is your responsibility to start the selected level afterwards\par
+
+\pard\sa200\sl276\slmult1\b\fs34 GalleryConfiguration.LevelHolder\b0\fs22\par
+In Gallery module, each level is essentially a \b LevelHolder\b0  object with the following properties:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 '\b string ID\b0 ': a unique identifier; completed levels are saved to the disk using their IDs\par
+{\pntext\f2\'B7\tab}'\b Sprite Icon\b0 ': level's icon displayed in the level selection menu\par
+{\pntext\f2\'B7\tab}'\b int Index\b0 ': index of the level in the \i\f1\lang1055 L\f0\lang9 evels\i0  list\par
+
+\pard\sa200\sl276\slmult1\b\fs34 GalleryConfiguration\b0\fs22\par
+Contents of the Gallery can be configured via a \b GalleryConfiguration\b0  asset (\i Assets-Create-Flamingo-Gallery Configuration\i0 ):\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Levels:\b0  a list of LevelHolders that define the levels in the game\par
+{\pntext\f2\'B7\tab}\b Checkpoints Per Level:\b0  the number of checkpoints in each level/stage\par
+{\pntext\f2\'B7\tab}\b Has Bonus Levels:\b0  whether or not \f1\lang1055 the \f0\lang9 game has bonus levels. When set to \i true\i0 , the latest checkpoint in each level/stage is considered a bonus level\par
+
+\pard\sa200\sl276\slmult1 If desired, it is also possible to create a GalleryConfiguration via Scripting API:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b static GalleryConfiguration CreateFrom( string[] levelIDs, Sprite[] levelIcons )\par
+
+\pard\sa200\sl276\slmult1\ul IMPORTANT:\ulnone\b0  GalleryConfiguration must be passed to the Gallery module via '\b SetConfiguration( GalleryConfiguration configuration )\b0 ' at the start of the game.\f1\lang1055   Alternatively, if a GalleryConfiguration asset named Gallery\i Configuration\i0  is present in the Resources folder, it will automatically be used for the configuration.\f0\lang9\par
+\par
+\ul\b\fs48 ShopModule\ulnone\b0\fs22\par
+Can be accessed via '\b FTemplate.Shop\b0 '. This module controls the shop UI, manages character customizations and stores the coins. These values are saved to disk (\i Application.persistentDataPath\i0 ) in binary format, which is more secure than PlayerPrefs.\par
+\b\fs34 Scripting API\b0\fs22\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 '\b\f1\lang1055 long\f0\lang9  Coins \{ get; \}\b0 ': returns the number of coins the user has\par
+{\pntext\f2\'B7\tab}'\b void IncrementCoins( \f1\lang1055 long\f0\lang9  amount, bool saveChanges = true )\b0 ': increments the coins. As the changes are saved to disk, this function shouldn't be called with \i saveChange\f1\lang1055 s\f0\lang9 =true \i0 parameter frequently. It is recommended to save changes only after a level is completed\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b ShopConfiguration.TabHolder GetActiveTab()\b0 ': returns the active tab in the shop UI\f0\lang9\par
+{\pntext\f2\'B7\tab}'\b void SetActiveTab( int tabIndex )\b0 ': \f1\lang1055 changes the active shop tab programmatically. Can be useful if you've modified the shop UI to hide the tabs and would like to show a different tab at each visit to the shop\f0\lang9\par
+{\pntext\f2\'B7\tab}'\b List<CustomizationItem> GetActiveCustomizations()\b0 ': returns the active character customizations\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b CustomizationItem GetActiveCustomization( string category )\b0 ': returns the active character customization in the specified category or \i null\i0 , if there is no active character customization in that category\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b List<CustomizationItem> GetAllCustomizations( string category )\b0 ': returns all character customizations in the specified category, regardless of whether or not they are active\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b CustomizationItem GetCustomizationByID( string id )\b0 ': returns the character customization with the specified ID\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b bool IsCustomizationUnlocked( CustomizationItem customizationItem )\b0 ' returns whether or not a character customization is unlocked in the Shop\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b void UnlockCustomizationItem( CustomizationItem customizationItem, bool saveSettings = true )\b0 ': unlocks a character customization. If '\i saveSettings\i0 ' is set to \i true\i0 , the changes are saved to disk. Can be called as part of a cheat code\f0\lang9\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b void UnlockAllCustomizationItems()\b0 ': unlocks all character customizations in the Shop. Can be called as part of a cheat code\f0\lang9\par
+{\pntext\f2\'B7\tab}'\b void SaveSettings()\b0 ': manually saves all changes to the disk. If \i IncrementCoins \i0 is called with \i saveChanges=false \i0 during gameplay, then this function should be called after a level is completed\par
+{\pntext\f2\'B7\tab}\f1\lang1055 '\b void ResetSettings()\b0 ': resets all Shop progress\f0\lang9\par
+{\pntext\f2\'B7\tab}'\b ShopActiveTabChangedDelegate OnActiveTabChanged\b0 ': invoked when user \f1\lang1055 switches \f0\lang9 the active \f1\lang1055 tab in the \f0\lang9 shop UI. The delegate takes a \i ShopConfiguration.TabHolder \i0 parameter\par
+{\pntext\f2\'B7\tab}'\b ShopCustomizationChangedDelegate OnCustomizationChanged\b0 ': invoked when user changes the active character customizations from the shop UI. The delegate takes a \i List<CustomizationItem> \i0 parameter\par
+{\pntext\f2\'B7\tab}'\b CloseShopHandlerDelegate CloseShopHandler\b0 ': invoked when user\f1\lang1055  attempts to leave the shop menu. If this delegate isn't registered to or it returns false, FTemplate automatically returns to the scene that invoked the shop menu. Otherwise, it is your responsibility to close the shop menu and/or change the scene as you wish\f0\lang9\par
+
+\pard\sa200\sl276\slmult1\b\fs34 CustomizationItem\b0\fs22\par
+Character customizations derive from the abstract \b CustomizationItem \b0 class. Each customization item has the following properties:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 '\b string ID\b0 ': a unique identifier; purchased character customizations are saved to the disk using their IDs\par
+{\pntext\f2\'B7\tab}'\b\f1\lang1055 long\f0\lang9  Price\b0 ': the price\par
+{\pntext\f2\'B7\tab}'\b Sprite Icon\b0 ': the icon displayed in the Shop menu\par
+{\pntext\f2\'B7\tab}'\b string Category\b0 ': a category for the customization; only one customization from each category can be active at a time\par
+
+\pard\sa200\sl276\slmult1 FTemplate comes bundled with the following CustomizationItem implementations:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b CustomizationGameObject: \b0 is connected to a GameObject prefab. Has a convenient "\i public Transform Instantiate( Transform parent )\i0 " function to quickly instantiate the customization\par
+{\pntext\f2\'B7\tab}\b CustomizationMaterial: \b0 is connected to\f1\lang1055  one or more materials. Has a convenient "\i public bool ApplyTo( Renderer renderer )\i0 " function to quickly apply the material(s) to the target Renderer object. This function returns true if one or more materials of the target object has changed and false, if all materials were already the same\f0\lang9\par
+{\pntext\f2\'B7\tab}\b CustomizationTexture: \b0 is connected to\f1\lang1055  one or more Textures. Has a convenient "\i public bool ApplyTo( Renderer renderer )\i0 " function to quickly apply the Texture(s) to the target Renderer object's material(s). This function returns true if one or more Textures of the target object's material(s) has changed and false, if all Textures were already the same\f0\lang9\par
+
+\pard\sa200\sl276\slmult1\b\fs34 ShopConfiguration\b0\fs22\par
+Contents of the Shop can be configured via a \b ShopConfiguration \b0 asset (\i Assets-Create-Flamingo-Shop Configuration\i0 ):\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Tabs:\b0  tabs displayed in the Shop menu. \f1\lang1055 Each tab has the following properties:\f0\lang9\par
+
+\pard 
+{\pntext\f0 i.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pnlcrm{\pntxta.}}
+\fi-360\li1080\sa200\sl276\slmult1\b\f1\lang1055 Category:\b0  every character customization in this tab will have this \i Category\i0  value\f0\lang9\par
+{\pntext\f0 ii.\tab}\b\f1\lang1055 Random Unlock Price:\b0  Shop supports 2 different purchase mechanics: purchasing selected character customizations directly or purchasing a random character customization each time the Buy button is clicked. If Random Unlock Price is set to 0, character customizations will be purchased directly; otherwise character customizations will be purchased randomly, in which case this value determines the cost of the random purchase\f0\lang9\par
+{\pntext\f0 iii.\tab}\b\f1\lang1055 Random Unlock Price Multiplier:\b0  \i Random Unlock Price\i0  will be multiplied by this value each time a new character customization is purchased in this tab\f0\lang9\par
+{\pntext\f0 iv.\tab}\b\f1\lang1055 Icon:\b0  the icon displayed on the tab in the Shop menu\f0\lang9\par
+{\pntext\f0 v.\tab}\b\f1\lang1055 Default Item:\b0  this character \f0\lang9 customization will be unlocked and selected by default\par
+{\pntext\f0 vi.\tab}\b\f1\lang1055 Items:\b0  purchasable character customizations\f0\lang9\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b\f1\lang1055 Shop Item Width: \b0 width of each shop item in the shop UI. Height will change proportionally to the width\f0\lang9\par
+{\pntext\f2\'B7\tab}\b\f1\lang1055 Ranks:\b0  user's current rank is shown at the top of the shop UI. Each time user purchases an item from the shop, his/her XP bar will progress and after a few purchases, the user will level up (this effect is totally cosmetic, it aims to encourage the user to buy more items). If \i Ranks\i0  is empty, the rank bar will be hidden from the shop UI. Each Rank has the following properties:\f0\lang9\par
+
+\pard 
+{\pntext\f0 i.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pnlcrm{\pntxta.}}
+\fi-360\li1080\sa200\sl276\slmult1\b\f1\lang1055 Name:\b0  a short name for the rank (e.g. Rookie)\f0\lang9\par
+{\pntext\f0 ii.\tab}\b\f1\lang1055 Icon:\b0  a small icon for the rank (up to 128x128 resolution is ideal)\f0\lang9\par
+{\pntext\f0 iii.\tab}\b\f1\lang1055 Progress To Next:\b0  number of purchases needed to progress from this rank to the next rank. The first rank in the \i Ranks\i0  array will be the user's initial rank\f0\lang9\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b\f1\lang1055 Max Rank Color: \b0 when user reaches the maximum rank, XP bar's background color will be changed to this color to further emphasize the user's achievement\f0\lang9\par
+{\pntext\f2\'B7\tab}\b Free Unlock Intervals: \b0 if desired, character customizations can be unlocked for free after user plays specified number of levels. The number of levels user must complete to be eligible for a free reward is determined by this list. By default, it is 4-8-12, so the free unlocks occur at 4th, 4+8=12th, 4+8+12=24th, 4+8+12+12=36th levels and so on\f1\lang1055 . It is also possible to ignore Free Unlock Intervals and track the free unlock's progress manually (see the \i UIModule.PlayNextUnlockAnimation\i0  function's parameters)\f0\lang9\par
+{\pntext\f2\'B7\tab}\b\f1\lang1055 Auto Save Free Unlock Progress:\b0  if set to \i true\i0 , after unlocking a new character customization for free, the changes are saved to disk automatically. When the free unlock's progress is tracked manually (i.e. unlocking a new character customization after each boss battle), it can be better to set this value to \i false\i0 . This way, if user tries to exploit the free unlock system by restarting the game immediately after a boss battle (so that they will encounter the boss again and receive a new reward), it won't work. But you need to save the changes to disk manually via \i SaveSettings()\i0  after loading the next level\f0\lang9\par
+{\pntext\f2\'B7\tab}\b Shop Scene: \b0 if assigned a value, clicking the Shop button in the main menu will open this scene. It is useful if a separate scene is used for previewing the character customizations in the shop\par
+{\pntext\f2\'B7\tab}\b\f1\lang1055 Video Ad For Coins Remote Key:\b0  shop UI has a rewarded ad button that gives the user free coins upon watching a rewarded ad. By default, this button is disabled but it can be enabled by modifying the \i FTemplate\i0  prefab and activating the \i VideoAdForCoinsButton\i0  object in \i ShopCanvas\i0  (make sure to either reposition the button so that it doesn't overlap with \i VideoAdButton\i0 , or disable the VideoAdButton object). The amount of coins that the user will gain is fetched from the remote server (\i AnalyticsModule\i0 's \i GetRemoteIntValue\i0  is called). This variable determines the key of the remote value on the server\f0\lang9\par
+{\pntext\f2\'B7\tab}\b\f1\lang1055 Video Ad For Coins Default Amount:\b0  if \i VideoAdForCoinsButton\i0 's reward value can't be fetched from the server, user will gain this amount of coins by default\f0\lang9\par
+
+\pard\sa200\sl276\slmult1\ul\b IMPORTANT:\ulnone\b0  ShopConfiguration must be passed to the Shop module via '\b SetConfiguration( ShopConfiguration configuration )\b0 ' at the start of the game.\f1\lang1055  Alternatively, if a ShopConfiguration asset named \i ShopConfiguration\i0  is present in the Resources folder, it will automatically be used for the configuration.\f0\lang9\par
+\par
+\ul\b\fs48 UIModule\ulnone\b0\fs22\par
+Can be accessed via '\b FTemplate.UI\b0 '. This module \f1\lang1055 handles\f0\lang9  various UI elements.\par
+\b\fs34 Scripting API\b0\fs22\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 '\b void Show( UIElementType target, float duration = -0.25f, float delay = 0f, float autoHideInSeconds = 0f )\b0 ': shows a specific UI element. If it is already visible, nothing happens. It takes the following parameters:\par
+
+\pard 
+{\pntext\f0 i.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pnlcrm{\pntxta.}}
+\fi-360\li1080\sa200\sl276\slmult1\b duration:\b0  if set to 0, UI element will appear instantly. Otherwise, UI element will appear slowly. Some UI elements use \i Animation \i0 or \i Animator \i0 components to play actual animation clips when they are shown and some use \i CanvasGroup \i0 components to slowly fade in. If duration is negative, length of animation clips isn't affected by duration, only CanvasGroups are affected. If duration is positive, animation clips are also affected by the duration and are sped up/slown down to match the duration\par
+{\pntext\f0 ii.\tab}\b delay: \b0 if greater than 0, UI element will start appearing after specified number of seconds pass\par
+{\pntext\f0 iii.\tab}\b autoHideInSeconds: \b0 if greater than 0, UI element will automatically be hidden after specified number of seconds pass since its appearance\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 '\b void Hide( UIElementType target, float duration = -0.25f, float delay = 0f )\b0 ': hides a specific UI element. If it is already hidden, nothing happens\par
+{\pntext\f2\'B7\tab}'\b bool IsVisible( UIElementType target )\b0 ': returns whether or not the specified UI element is currently visible\par
+{\pntext\f2\'B7\tab}'\b void HideAllHUDElements( float duration = -0.25f )\b0 ': hides all HUD elements (see '\i UIElement.UI_HUD_ELEMENTS\i0 ')\par
+{\pntext\f2\'B7\tab}'\b void HideAllTutorials( float duration = -0.25f )\b0 ': hides all tutorials (see '\i UIElement.UI_TUTORIALS\i0 ')\par
+{\pntext\f2\'B7\tab}'\b void HideAllMenus( float duration = -0.25f )\b0 ': hides all menus (see '\i UIElement.UI_MENUS\i0 ')\par
+{\pntext\f2\'B7\tab}'\b void HideAllUIElements( float duration = -0.25f )\b0 ': hides all UI elements\par
+{\pntext\f2\'B7\tab}'\b void FadeIn( float duration = 0.25 )\b0 ': plays a fade in animation (screen fades in from black)\par
+{\pntext\f2\'B7\tab}'\b IEnumerator FadeInCoroutine( float duration = 0.25 )\b0 ': \i FadeIn\i0 's coroutine version\par
+{\pntext\f2\'B7\tab}'\b void FadeOut( float duration = 0.25 )\b0 ': plays a fade out animation (screen fades to black)\par
+{\pntext\f2\'B7\tab}'\b IEnumerator FadeOutCoroutine( float duration = 0.25 )\b0 ': \i FadeOut\i0 's coroutine version\par
+{\pntext\f2\'B7\tab}'\b void FadeToScene( int sceneBuildIndex, float duration = 0.25 )\b0 ': fades out, loads the specified level and then fades in\par
+{\pntext\f2\'B7\tab}'\b IEnumerator FadeToSceneCoroutine( int sceneBuildIndex, float duration = 0.25 )\b0 ': \i FadeToScene\i0 's coroutine version\par
+{\pntext\f2\'B7\tab}'\b void FadeToScene( string sceneName, float duration = 0.25 )\b0 ': same as above\par
+{\pntext\f2\'B7\tab}'\b IEnumerator FadeToSceneCoroutine( string sceneName, float duration = 0.25 )\b0 ': same as above\par
+{\pntext\f2\'B7\tab}'\b\f1\lang1055 long\f0\lang9  DisplayedTotalCoins \{ get; \}\b0 ': returns the number of coins displayed in \i UIElementType.TotalCoinsText\i0 . It is \ul NOT\ulnone  automatically synced with ShopModule's \i Coins \i0 property\par
+{\pntext\f2\'B7\tab}'\b void SetTotalCoins( \f1\lang1055 long\f0\lang9  totalCoins, bool animate )\b0 ': changes the value of total coins text (\i UIElementType.TotalCoinsText\i0 ) and, if '\i animate\i0 ' is set to \i true\i0 , animates the text's scale value for a subtle effect\par
+{\pntext\f2\'B7\tab}'\b void SetProgress( int currentStage, int currentCheckpoint, bool immediately = false )\b0 ': changes the values displayed on \i UIElementType.Progressbar\i0 . '\i currentStage\i0 ' sets the level indices shown on each side of the progressbar and '\i currentCheckpoint\i0 ' specifies how many slots in the progressbar should be filled. If '\i immediately\i0 ' is \i false\i0 , then the progress change is animated\par
+{\pntext\f2\'B7\tab}'\b void ShowDialog( string label, UnityAction yesButtonAction, UnityAction noButtonAction = null, float duration = 0.25 )\b0 ': displays a dialog with Yes and No buttons. When a button is clicked, its corresponding action is invoked\par
+{\pntext\f2\'B7\tab}'\b void PlayNextUnlockAnimation(\f1\lang1055  int unlockProgressCurrent = 0, int unlockProgressTotal = 0 \f0\lang9 )\b0 ': shows \i UIElementType.NextUnlockPanel \i0 menu (which displays information about the next free \f1\lang1055 character customization\f0\lang9  that the user will receive) and animates its progress. If progress reaches 100%, the item is automatically unlocked\f1\lang1055 . When \i unlockProgressCurrent\i0  and \i unlockProgressTotal\i0  are left as 0, Shop module's \i Free Unlock Intervals\i0  is used to determine the progress. Otherwise, these values manually determine the free unlock's progress. For example, if unlockProgressCurrent is set to 0 and unlockProgressTotal is set to 2, free unlock's progress will increase from 0% (0/2) to 50% ((0+1)/2). If unlockProgressCurrent is set to 3 and unlockProgressTotal is set to 4, free unlock's progress will increase from 75% (3/4) to 100% ((3+1)/4), in which case the free character customization will be unlocked\f0\lang9\par
+{\pntext\f2\'B7\tab}'\b IEnumerator PlayNextUnlockAnimationCoroutine(\f1\lang1055  int unlockProgressCurrent = 0, int unlockProgressTotal = 0 \f0\lang9 )\b0 ': \i PlayNextUnlockAnimation\i0 's coroutine version\par
+{\pntext\f2\'B7\tab}'\b void PlayCelebrationParticles()\b0 ': plays fancy particle FX in front of the camera, can be called when e.g. a level is completed. \lang1033 In case \i FTemplate.asmdef\i0  Assembly Definition File is deleted and the project is using URP, UIModule's \i "#define USING_URP\i0 " line \b must be\b0  uncommented for this function to work correctly!\lang9\par
+{\pntext\f2\'B7\tab}'\b void \f1\lang1055 Clear\f0\lang9 CelebrationParticles()\b0 ': \f1\lang1055 instantly clears the celebration particles (if the particle system hasn't already finished)\f0\lang9\par
+{\pntext\f2\'B7\tab}'\b void SpawnCollectedCoins( Vector2 screenPos, int spawnedCoins, int gainedCoins, float scaleMultiplier = 1f, float spread = 30f )\b0 ': spawns \i\f1\lang1055 spawnedCoins\i0\f0\lang9  \f1\lang1055 amount \f0\lang9 of coins at '\i\f1\lang1055 screenPos\i0\f0\lang9 ' and moves them to \i UIElementType.TotalCoinsText\i0 's position. Ideal for coin collection animations. Note that when a coin reaches its destination, it \ul WILL\ulnone  increment the displayed total coins\f1\lang1055  but \ul WON'T\ulnone  affect \i ShopModule\i0 's \i Coins\i0  property, it must be changed manually via ShopModule's \i IncrementCoins\i0  function. Since spawnedCoins and \i gainedCoins\i0  are separate parameters, you can spawn e.g. 10 coins and let them increment the displayed total coins by 50 (\i gainedCoins\i0 ). In this case, each spawned coin will increment the displayed total coins by 5\f0\lang9\par
+{\pntext\f2\'B7\tab}'\b\f1\lang1055 LevelCompleteMenu LevelCompleteMenuType \f0\lang9\{ get; set; \}\b0 ': \f1\lang1055 changes the behaviour of \i\f0\lang9 UIElementType.\f1\lang1055 LevelCompletedMenu\i0 . Has 3 values:\f0\lang9\par
+
+\pard 
+{\pntext\f0 i.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pnlcrm{\pntxta.}}
+\fi-360\li1080\sa200\sl276\slmult1\b\f1\lang1055 ShowButtons:\b0  shows Restart and Continue buttons and waits for user's input\f0\lang9\par
+{\pntext\f0 ii.\tab}\b\f1\lang1055 ShowTextThenFadeOut:\b0  shows "Victory!" text for a brief moment and then invokes NextLevelButtonClicked event automatically (it will only be invoked once, so it is very important to fade to the next level in the registered function)\f0\lang9\par
+{\pntext\f0 iii.\tab}\b\f1\lang1055 DirectFadeOut:\b0  immediately invokes NextLevelButtonClicked event automatically \i (default value)\i0\f0\lang9\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 '\b\f1\lang1055 LevelFailedMenu LevelFailedMenuType \f0\lang9\{ get; set; \}\b0 ': \f1\lang1055 changes the behaviour of \i\f0\lang9 UIElementType.\f1\lang1055 LevelFailedMenu\i0 . Has 2 values:\f0\lang9\par
+
+\pard 
+{\pntext\f0 i.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pnlcrm{\pntxta.}}
+\fi-360\li1080\sa200\sl276\slmult1\b\f1\lang1055 RestartOnly:\b0  shows a Restart button and waits for user's input \i (default value)\i0\f0\lang9\par
+{\pntext\f0 ii.\tab}\b\f1\lang1055 AllowSkip:\b0  shows Restart and Continue buttons and plays a 'sad face' emoji animation in the middle. A timer will appear around the emoji and if user doesn't click any of the buttons before the timer reaches zero, Continue button will be clicked automatically. Clicking Restart button will trigger a rewarded ad\f0\lang9\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 '\b\f1\lang1055 BonusLevelRewardMenu BonusLevelRewardMenuType \f0\lang9\{ get; set; \}\b0 ': \f1\lang1055 changes the behaviour of \i\f0\lang9 UIElementType.\f1\lang1055 BonusLevelRewardMenu\i0 . Has 2 values:\f0\lang9\par
+
+\pard 
+{\pntext\f0 i.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pnlcrm{\pntxta.}}
+\fi-360\li1080\sa200\sl276\slmult1\b\f1\lang1055 RotatingStick:\b0  a stick continuously rotates around a coin multiplier bar and if user clicks the Claim button, the reward gained in this bonus level (\i BonusLevelRewardAmount\i0 ) is multiplied by that multiplier and automatically added to \i ShopModule\i0 's \i Coins\i0  property. User can click the Continue button to skip the process and avoid watching a rewarded ad \i (default value)\i0\f0\lang9\par
+{\pntext\f0 ii.\tab}\b\f1\lang1055 PredefinedMultiplier:\b0  if user clicks the Claim button, the reward gained in this bonus level (\i BonusLevelRewardAmount\i0 ) is multiplied by \i BonusLevelRewardV2Multiplier\i0  and automatically added to \i ShopModule\i0 's \i Coins\i0  property. User can click the Continue button to skip the process and avoid watching a rewarded ad\f0\lang9\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 '\b\f1\lang1055 int\f0\lang9  \f1\lang1055 BonusLevelRewardAmount \f0\lang9\{ get; set; \}\b0 ': changes the \f1\lang1055 base reward that the user will gain when \i\f0\lang9 UIElementType.BonusLevelRewardMenu\i0\f1\lang1055  is shown. This value can be assigned proportionally to how well the user has scored in the bonus level\f0\lang9\par
+{\pntext\f2\'B7\tab}'\b\f1\lang1055 int BonusLevelRewardV2Multiplier \f0\lang9\{ get; set; \}\b0 ': \f1\lang1055 sets \f0\lang9 the \f1\lang1055 reward multiplier of \i\f0\lang9 UIElementType.BonusLevelRewardMenu\i0\f1\lang1055  when \i BonusLevelRewardMenuType\i0  is set to \i PredefinedMultiplier\i0\f0\lang9\par
+{\pntext\f2\'B7\tab}'\b string SwipeTutorialLabel \{ get; set; \}\b0 ': changes the label displayed for \i UIElementType.SwipeTutorial\i0\par
+{\pntext\f2\'B7\tab}'\b string TapToDoStuffTutorialLabel \{ get; set; \}\b0 ': changes the label displayed for \i UIElementType.TapToDoStuffTutorial\i0\par
+{\pntext\f2\'B7\tab}'\b string TopCurrentLevelLabel\f1\lang1055  \f0\lang9\{ get; set; \}\b0 ': changes the label displayed for \i UIElementType.TopCurrentLevelText\i0\par
+{\pntext\f2\'B7\tab}'\b float TapToDoStuffTutorialYPosition \{ get; set; \}\b0 ': changes the Y position of \i UIElementType.TapToDoStuffTutorial\i0\par
+{\pntext\f2\'B7\tab}'\b float SwipeTutorialYPosition \{ get; set; \}\b0 ': changes the Y position of \i UIElementType.SwipeTutorial\i0\par
+{\pntext\f2\'B7\tab}'\b ButtonClickDelegate StartLevelButtonClicked\b0 ': this event is invoked when user clicks the Play button in the main menu. The delegate doesn't take any parameters but returns a \i boolean\i0 . If game can't start right now, this function should return \i false\i0 . When it returns \i true\i0 , any further clicks to the Play button in Main Menu are ignored\f1\lang1055 . \f0\lang9 Note that \f1\lang1055 afterwards, \f0\lang9 it is your responsibility to \f1\lang1055 hide the main menu and \f0\lang9 start \f1\lang1055 the \f0\lang9 level\par
+{\pntext\f2\'B7\tab}'\b ButtonClickDelegate RestartLevelButtonClicked\b0 ': invoked when user clicks the Restart button in the LevelFailed and/or LevelCompleted menus. If current level can't be restarted right now, this function should return \i false\i0 . When it returns \i true\i0 , any further clicks to the Restart buttons in LevelFailed and LevelCompleted menus are ignored\f1\lang1055 . \f0\lang9 Note that \f1\lang1055 afterwards, \f0\lang9 it is your responsibility to \f1\lang1055 hide the current menu and re\f0\lang9 start \f1\lang1055 the \f0\lang9 level\par
+{\pntext\f2\'B7\tab}'\b ButtonClickDelegate NextLevelButtonClicked\b0 ': invoked when user clicks the Continue button in the LevelCompleted menu. If game can't proceed to the next level right now, this function should return \i false\i0 . When it returns \i true\i0 , any further clicks to the Continue button in LevelCompleted menu are ignored\f1\lang1055 . \f0\lang9 Note that \f1\lang1055 afterwards, \f0\lang9 it is your responsibility to \f1\lang1055 hide the current menu and load\f0\lang9  \f1\lang1055 the next \f0\lang9 level\par
+{\pntext\f2\'B7\tab}'\b ButtonClickDelegate SkipLevelButtonClicked\b0 ': invoked when user clicks the \f1\lang1055 Skip \f0\lang9  button in the TopSkipLevelButton \f1\lang1055 UI element\f0\lang9 . If \f1\lang1055 the current level \f0\lang9 can't \f1\lang1055 be skipped \f0\lang9 right now, this function should return \i false\i0 . When it returns \i true\i0 , any further clicks to the \f1\lang1055 Skip\f0\lang9  button \f1\lang1055 are \f0\lang9 ignored\f1\lang1055  for a few seconds. \f0\lang9 Note that \f1\lang1055 afterwards, \f0\lang9 it is your responsibility\f1\lang1055  to load the next level\f0\lang9\par
+{\pntext\f2\'B7\tab}'\b UIElementDelegate OnUIElementShown\b0 ': invoked \f1\lang1055 for each \i Show\i0  call\f0\lang9\par
+
+\pard\sa200\sl276\slmult1\b\fs64\lang1033\par
+}
+ 

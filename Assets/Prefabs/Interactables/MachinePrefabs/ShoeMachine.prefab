@@ -1,0 +1,237 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &127387077151875317
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 439181930261447524, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c046573d387fd6142867c037c6c46639,
+        type: 3}
+    - target: {fileID: 655184348811411223, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: modifyData.Array.data[0].ColorPalate.name
+      value: Shoes
+      objectReference: {fileID: 0}
+    - target: {fileID: 655184348811411223, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: modifyData.Array.data[0].ColorPalate.type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 655184348811411223, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: modifyData.Array.data[0].images.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 655184348811411223, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: modifyData.Array.data[0].images.Array.data[0]
+      value: 
+      objectReference: {fileID: 8376947676010650435}
+    - target: {fileID: 655184348811411223, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: modifyData.Array.data[0].ColorPalate.colors.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 655184348811411223, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: modifyData.Array.data[0].ColorPalate.colors.Array.data[0].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 655184348811411223, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: modifyData.Array.data[0].ColorPalate.colors.Array.data[0].b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 655184348811411223, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: modifyData.Array.data[0].ColorPalate.colors.Array.data[0].g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 655184348811411223, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: modifyData.Array.data[0].ColorPalate.colors.Array.data[0].r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 655184348811411223, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: modifyData.Array.data[0].ColorPalate.colors.Array.data[1].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 655184348811411223, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: modifyData.Array.data[0].ColorPalate.colors.Array.data[1].b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 655184348811411223, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: modifyData.Array.data[0].ColorPalate.colors.Array.data[1].g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 655184348811411223, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: modifyData.Array.data[0].ColorPalate.colors.Array.data[1].r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 655184348811411223, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: modifyData.Array.data[0].ColorPalate.colors.Array.data[2].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 655184348811411223, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: modifyData.Array.data[0].ColorPalate.colors.Array.data[2].b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 655184348811411223, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: modifyData.Array.data[0].ColorPalate.colors.Array.data[2].g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 655184348811411223, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: modifyData.Array.data[0].ColorPalate.colors.Array.data[2].r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6181894623026508229, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: m_Name
+      value: ShoeMachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8375631237713811803, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8375631237713811803, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8375631237713811803, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8375631237713811803, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8375631237713811803, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8375631237713811803, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8375631237713811803, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8375631237713811803, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8375631237713811803, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8375631237713811803, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8375631237713811803, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468021122418015158, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d837b7e6d7b83a84cb379f79fae61e98,
+        type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 51005a3624fb8ee43ad47c6c9a69f0fe, type: 3}
+--- !u!1 &6056798027593060656 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6181894623026508229, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+    type: 3}
+  m_PrefabInstance: {fileID: 127387077151875317}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &635921716481122274 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 655184348811411223, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+    type: 3}
+  m_PrefabInstance: {fileID: 127387077151875317}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c2ab398593c27246931e199829bb6e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5437376223048424402 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5382330432256228135, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+    type: 3}
+  m_PrefabInstance: {fileID: 127387077151875317}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df1441ba010b4582b81cb9e954d75312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8376947676010650435 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8468021122418015158, guid: 51005a3624fb8ee43ad47c6c9a69f0fe,
+    type: 3}
+  m_PrefabInstance: {fileID: 127387077151875317}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8334075764213092729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6056798027593060656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d8f98bdf11848698d1bb74182c602ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  genderSetting: 0
+  gameColorPalate: {fileID: 11400000, guid: d827e9bcf1749bd48809f77d378e66c9, type: 2}
+  bodyPart: 2
+  materialModifier: {fileID: 635921716481122274}
+  robotArm: {fileID: 5437376223048424402}
+  shoeStyle:
+    stylePalate:
+      name: Shoes
+      type: 2
+      colors:
+      - {r: 1, g: 1, b: 1, a: 1}
+      - {r: 1, g: 1, b: 1, a: 1}
+      - {r: 1, g: 1, b: 1, a: 1}
+      texture: {fileID: 0}
+      colorToPick: 0

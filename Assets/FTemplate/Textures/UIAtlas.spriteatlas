@@ -1,0 +1,171 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UIAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 33
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 1
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 2
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 1
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: f38f114bdf04b6e4c82a6b5bd53d4c62, type: 3}
+    - {fileID: 102900000, guid: 33785bc20b531ad4ea511991a980f6b7, type: 3}
+    - {fileID: 102900000, guid: e22cfa3396a017c4b8f7aef52b90a00d, type: 3}
+    - {fileID: 102900000, guid: ce22a5892ca16b94db3981ac78cd52a5, type: 3}
+    - {fileID: 102900000, guid: caff850714fbae94bbe2cdb069f4bc54, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: e4e0946080b972240924b05402e8c24d, type: 3}
+  - {fileID: 21300000, guid: a2d182d089d464f20a7d6bcb45c8c60c, type: 3}
+  - {fileID: 21300000, guid: d2869531b298adc409e215f507a822ab, type: 3}
+  - {fileID: 21300000, guid: dfeb9991500f8ac48931e4e151e13101, type: 3}
+  - {fileID: 21300000, guid: 80206e12cc0f89e40a6c97ebd57b797b, type: 3}
+  - {fileID: 21300000, guid: 342dfe3209170b249a2d3dad82574568, type: 3}
+  - {fileID: 21300000, guid: b6e051c26583b004f8f855ca815d2425, type: 3}
+  - {fileID: 21300000, guid: 535673d3292e04b449b63e2d699f99ef, type: 3}
+  - {fileID: 21300000, guid: fe75e174c5f5ff948a4b5c927497999f, type: 3}
+  - {fileID: 21300000, guid: 70bfc2743baf43a468a2b0a77084c5c1, type: 3}
+  - {fileID: 21300000, guid: 561a63d42bc043440a1e0cdb4c258e95, type: 3}
+  - {fileID: 21300000, guid: 81a52e257f5294d4fb6bb9a4b53be5ec, type: 3}
+  - {fileID: 21300000, guid: 6ca09e45c1ff601419f76c051cd7ecb4, type: 3}
+  - {fileID: 21300000, guid: 1730a1c5d5f477b4f8997acc4a439a91, type: 3}
+  - {fileID: 21300000, guid: c3ad7ec57dd2e86428870a8a2f7f3791, type: 3}
+  - {fileID: 21300000, guid: 368703e5f20f95341b0751c8a192c96b, type: 3}
+  - {fileID: 21300000, guid: a633d6e55a5a95f49a5d3cf0e7733b35, type: 3}
+  - {fileID: 21300000, guid: 83ae6f06387c8844ab67acae993b51e7, type: 3}
+  - {fileID: 21300000, guid: af3b59562ebd1354e9edab2494641a3c, type: 3}
+  - {fileID: 21300000, guid: c2708666d4d8c8d47b987c22468bb1b8, type: 3}
+  - {fileID: 21300000, guid: 0059386630bd5444cb2534bb6ee3dcd3, type: 3}
+  - {fileID: 21300000, guid: c9e68876d78d97348bdf1a7f50303093, type: 3}
+  - {fileID: 21300000, guid: b905fca6a53feca4c991d57723ad7cc7, type: 3}
+  - {fileID: 21300000, guid: d535ffb65bf754dda95c3181d7389600, type: 3}
+  - {fileID: 21300000, guid: b1af1607af77947d785eef1abbc8aa70, type: 3}
+  - {fileID: 21300000, guid: 67aae0278c3ff3a42aca0c99a97c0981, type: 3}
+  - {fileID: 21300000, guid: 0ff93a57f8603e14d93e05ded95d6032, type: 3}
+  - {fileID: 21300000, guid: 65e0074815a33634e99a2b009880ee72, type: 3}
+  - {fileID: 21300000, guid: 535d5068f6e6f4174a907fe1688dc8c1, type: 3}
+  - {fileID: 21300000, guid: 936b1509f7d676b4c8c728f2e1b1ee55, type: 3}
+  - {fileID: 21300000, guid: e559edd909f1a9248a676dc4cdf0cced, type: 3}
+  - {fileID: 21300000, guid: 739a272aa24d2494893673b3e6c8ce40, type: 3}
+  - {fileID: 21300000, guid: def7235a7c16dc54dbf40e61366c7f25, type: 3}
+  - {fileID: 21300000, guid: 298c609aa545eea418b3c7d374672479, type: 3}
+  - {fileID: 21300000, guid: c87e7f3b2adf72a4b9eb53514aa6f1db, type: 3}
+  - {fileID: 21300000, guid: 03cb914bc3472684b9f9fefe11f660d9, type: 3}
+  - {fileID: 21300000, guid: 932a836bed6cc424099688f71edffbd8, type: 3}
+  - {fileID: 21300000, guid: 9ade466bf6b844708885e60ae21c97cf, type: 3}
+  - {fileID: 21300000, guid: 813b1efb068243f47a299c67439ef77c, type: 3}
+  - {fileID: 21300000, guid: 4b8444ac1378eea4f84fc081380abbd5, type: 3}
+  - {fileID: 21300000, guid: dd07311d7c4a68445b4c8345985d4d52, type: 3}
+  - {fileID: 21300000, guid: ccb9cb3d26ff0491da27678834d72789, type: 3}
+  - {fileID: 21300000, guid: 74e324dd9cbd34aa2811e539973caac7, type: 3}
+  - {fileID: 21300000, guid: d4707eaef6f677e48b69c37a713f173a, type: 3}
+  - {fileID: 21300000, guid: 33657cce156e6404e87ac3097ab55545, type: 3}
+  - {fileID: 21300000, guid: d54afddea129330499dc9c9b23096a73, type: 3}
+  - {fileID: 21300000, guid: 0bca651f898f1479c957ebcc1fa23f88, type: 3}
+  - {fileID: 21300000, guid: 7e7a75af008b1b2479a8dbb9a2581c08, type: 3}
+  - {fileID: 21300000, guid: a5b6cbcfec11bcc428784affa0bae14a, type: 3}
+  - {fileID: 21300000, guid: e74308ef8afe26b4ebbecdfa28667078, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - ShopVideoAdButton
+  - Icon_Gold
+  - BonusLevelBar
+  - SelectedItemHighlight
+  - Coin
+  - ProgressbarActive
+  - ShopTabBackgroundInactive
+  - Frame_BasicFrame_Circle01
+  - ProgressbarInactive
+  - SettingsButton
+  - FingerNormal
+  - RestartButton
+  - ShopBackground
+  - BonusLevelBarStick
+  - RestartButton2
+  - YesButton
+  - RestartButton
+  - LoadingBarInside
+  - ShopButton
+  - PlayButton
+  - LockedItem
+  - ContinueButton
+  - SettingsSound
+  - Icon_ImageIcon_Ad_00_l
+  - ProgressbarStage
+  - ShopExitButton
+  - VideoAdButton
+  - FingerTapped
+  - Btn_MainButton_White
+  - White
+  - Circle
+  - ShopTabBackgroundActive
+  - GalleryButton
+  - CurrentLevelLabelBackground
+  - RestartButtonRewardedAd
+  - LoadingBarOutline
+  - RewardedAdIcon
+  - Pictoicon_Arrow_Fw
+  - TutorialHand
+  - SettingsVibration
+  - NoButton
+  - Frame_ListFrame07_s
+  - Frame_SpeechBubble01
+  - ClaimButton
+  - Pictoicon_Refresh
+  - ShopBuyButton
+  - Icon_PictoIcon_Next02
+  - SkipButton
+  - GalleryBackground
+  - TutorialBackground
+  m_RenderDataMap: {}
+  m_Tag: UIAtlas
+  m_IsVariant: 0
